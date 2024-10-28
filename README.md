@@ -1,53 +1,77 @@
-# Project github.com/anishkn04/PathoGin
 
-One Paragraph of project description goes here
+---
+
+# PathoGin
+
+**PathoGin** is a tool designed for analyzing and identifying pathogenic sequences from genetic data. It streamlines the process of pathogen detection by providing an efficient workflow for bioinformatics research, making it easier to analyze, test, and deploy the application across different environments. The tool is geared towards researchers and developers looking for a robust, automated solution to handle pathogen-related genetic data processing and analysis.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Follow these instructions to get a local copy of the project up and running for development and testing purposes. Check the deployment section for notes on how to deploy the project in a production environment.
 
-## MakeFile
+### Prerequisites
 
-Run build make command with tests
-```bash
-make all
-```
+Ensure you have the following installed:
+- Docker
+- GNU Make
 
-Build the application
-```bash
-make build
-```
+## MakeFile Commands
 
-Run the application
-```bash
-make run
-```
-Create DB container
-```bash
-make docker-run
-```
+Use the following commands to manage the application:
 
-Shutdown DB Container
-```bash
-make docker-down
-```
+- **Run build and tests**  
+   Compiles the project and runs the test suite:
+   ```bash
+   make all
+   ```
 
-DB Integrations Test:
-```bash
-make itest
-```
+- **Build the application**  
+   Creates a build of the application:
+   ```bash
+   make build
+   ```
 
-Live reload the application:
-```bash
-make watch
-```
+- **Run the application**  
+   Executes the application locally:
+   ```bash
+   make run
+   ```
 
-Run the test suite:
-```bash
-make test
-```
+- **Create DB container**  
+   Spins up a Docker container with the database:
+   ```bash
+   make docker-run
+   ```
 
-Clean up binary from the last build:
-```bash
-make clean
-```
+- **Shutdown DB container**  
+   Stops and removes the running Docker container for the database:
+   ```bash
+   make docker-down
+   ```
+
+- **Run DB Integration Tests**  
+   Executes database integration tests:
+   ```bash
+   make itest
+   ```
+
+- **Live reload the application**  
+   Watches for file changes and reloads the application automatically:
+   ```bash
+   make watch
+   ```
+
+- **Run the test suite**  
+   Runs all tests in the project:
+   ```bash
+   make test
+   ```
+
+- **Clean up**  
+   Removes the binary from the previous build:
+   ```bash
+   make clean
+   ```
+
+---
+
